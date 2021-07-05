@@ -43,8 +43,8 @@ body {
   margin-bottom: 70px;
 }
 .profile-avatar {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 100rem;
   object-fit: cover;
   margin: 0 auto 20px;
@@ -52,8 +52,8 @@ body {
 }
 .profile-name {
   font-weight: 600;
-  font-size: 18px;
-  color: #050938;
+  font-size: 20px;
+  color: black;
   margin-bottom: 10px;
 }
 .menu-item {
@@ -75,6 +75,7 @@ body {
 }
 .main {
   padding: 30px 35px 0;
+  margin-bottom: 50px;
 }
 .header {
   display: flex;
@@ -255,7 +256,7 @@ body {
 }
 
 .player {
-  background-color: white;
+  background-color: #9799BA;
   padding: 20px;
   border-radius: 12px 12px 0 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -272,6 +273,7 @@ body {
   border-radius: 20px;
   max-width: 300px;
   margin: 0 auto 30px;
+  background-color: white;
 }
 
 .player-media {
@@ -347,6 +349,7 @@ body {
 .player-prev {
   cursor: pointer;
   font-size: 16px;
+  color: #F1F1F1;
 }
 .progress {
   width: 100%;
@@ -428,6 +431,7 @@ body {
   }
   .main {
     padding: 20px 20px 0;
+	margin-bottom: 50px;
   }
   .song-title,.song-album {
     display: -webkit-box;
@@ -450,4 +454,27 @@ body {
   .author {
     font-size: 12px;
   }
+}
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px;
+	background-color: black;
+}
+.loader {
+	margin-top: 25%;
+	border: 10px solid #f3f3f3;
+	border-top: 10px solid #65506D;
+	border-radius: 50%;
+	width: 120px; height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }

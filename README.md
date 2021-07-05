@@ -1,2 +1,6 @@
-# Music-App
-This project demo about music player
+# Music Player
+This project demo fetch TOP100 Vietnam Music.
+
+
+
+
