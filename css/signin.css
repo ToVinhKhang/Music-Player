@@ -8,6 +8,8 @@
 html{font-size: 100%;font-family: "Poppins", sans-serif;}
 *{box-sizing: border-box;}
 body {width: 100%;min-height: 80vh;background-color: #f2f3f5;display: flex;align-items: center;justify-content: center;}
+.txt-center{text-align:center;}
+.signupnow{color: red;text-decoration: none;font-weight: bold;}
 
 /* ------- */
 /* Heading */
@@ -44,6 +46,12 @@ body {width: 100%;min-height: 80vh;background-color: #f2f3f5;display: flex;align
 #pass-label {top: 103px;}
 #pass:not(:placeholder-shown) + #pass-label, #pass:focus + #pass-label {
   top: 80px;
+  left: 11px;padding: 0 10px;display: inline-block;background-color: white;color: #6a5af9;
+}
+/* Input: CfmPass */
+#cfmpass-label {top: 183px;}
+#cfmpass:not(:placeholder-shown) + #cfmpass-label, #cfmpass:focus + #cfmpass-label {
+  top: 160px;
   left: 11px;padding: 0 10px;display: inline-block;background-color: white;color: #6a5af9;
 }
 /* Submit */
