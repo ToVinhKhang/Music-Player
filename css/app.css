@@ -29,7 +29,7 @@ body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;backgroun
 .header {display: flex;justify-content: space-between;align-items: center;margin-bottom: 40px;}
 .search {padding: 15px 30px;border: 1px solid #e9ebf2;border-radius: 100px;display: flex;align-items: center;width: 100%;max-width: 400px;}
 .search-icon {flex: 1;font-size: 16px;}
-.search-input {border: 0;outline: none;width: 100%;padding: 0 15px;}
+.search-input {border: 0;outline: none;width: 100%;padding: 0 15px;background-color:#FCFCFE;font-style: italic;letter-spacing:1px;}
 .tool {font-size: 18px;display: flex;align-items: center;}
 .tool-icon {margin-right: 25px;}
 .upgrade {
@@ -208,7 +208,7 @@ body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;backgroun
 	.heading {font-size: 20px;text-align: center;}
 	.title {font-size: 14px;}
 	.author {font-size: 12px;}
-	.search {max-width: 100%;}
+	.search {max-width: 100%;height: 35px;}
 	.player {border-radius: 12px;}
 	#countSong{display: none;}
 	.tool{display: none;}
