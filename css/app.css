@@ -66,7 +66,7 @@ body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;backgroun
 }
 .author {text-transform: capitalize;color: #a4adc8;}
 .content {display: grid;grid-template-columns: 2fr 1.2fr;grid-gap: 25px;}
-.song {padding: 10px 20px;background-color: white;border-radius: 10px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;display: flex;align-items: center;margin-bottom: 10px;cursor: pointer;}
+.song {padding: 10px 20px;background-color: white;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;display: flex;align-items: center;margin-bottom: 10px;cursor: pointer;}
 .song *:not(.song-love){pointer-events: none;}
 .song-list {padding: 10px;max-height: 420px;overflow-y: auto;-ms-overflow-style: none;scrollbar-width: none;}
 .song-list::-webkit-scrollbar {display: none;}
@@ -203,8 +203,9 @@ body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;backgroun
 	.header{display: grid;grid-template-columns: 100%;grid-gap: 30px 0;}
 	.song-list{max-height: 350px;}
 	.main{padding: 20px 20px 0;margin-bottom: 50px;}
-	.song-title,.song-album{display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow-y: hidden;text-overflow: ellipsis;word-break: break-word;max-width: 220px;}
-	.song-album{max-width: 180px;}
+	.song-title,.song-album{display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;width: auto!important; overflow: hidden;text-overflow: ellipsis;word-break: break-word;font-size:12px;}
+	.song-title{max-width: 150px;}
+	.song-album{float: right;max-width: 120px;}
 	.heading{font-size: 20px;text-align: center;}
 	.title{font-size: 14px;}
 	.author{font-size: 12px;}
@@ -212,6 +213,11 @@ body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;backgroun
 	.player{border-radius: 12px;}
 	#countSong{display: none;}
 	.tool{display: none;}
+	.song{padding: 10px;}
+}
+@media screen and (max-width: 415px) {
+	.song-title{max-width: 132px;font-size:11px;}
+	.song-album{max-width: 82px;font-size:11px;}
 }
 
 /* LOADER */
