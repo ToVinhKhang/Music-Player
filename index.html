@@ -16,8 +16,10 @@
   <body>
     <div class="wrapper">
       <div class="sidebar">
+		<i class="fa fa-moon-o tool-icon-responsive fa-3x" onclick="darkMode()"></i>
         <div class="profile">
           <img src="./img/Khang.jpg" alt="avatar"class="profile-avatar"/>
+		  
           <h3 class="profile-name">To Vinh Khang</h3>
         </div>
         <ul class="menu">
@@ -40,6 +42,7 @@
             <input id="searchInput" onkeyup="SearchSongs()" type="text" placeholder="Searching name of songs..." class="search-input"/>
           </div>
           <div class="tool">
+			<i class="fa fa-moon-o tool-icon" onclick="darkMode()"></i>
             <i class="fa fa-bell tool-icon"></i>
             <i class="tool-icon fa fa-cog"></i>
             <a href="#" class="upgrade">Upgrade VIP</a>
@@ -57,8 +60,8 @@
 			<!-- Songs List-->
             <div class="song-list" id="song-list"></div>
 			
-			<!-- Search Songs -->
 			<script>
+				<!-- Search Songs -->
 				function SearchSongs(){
 				  var input = document.getElementById("searchInput");
 				  var filter = input.value.toUpperCase();
@@ -73,8 +76,9 @@
 					}
 				  }
 				}
+				<!-- Dark Mode -->
+				function darkMode(){document.body.classList.toggle("dark-mode");}
 			</script>
-			
           </div>
 		  
 		  <!-- SONG NOW PLAYING -->

@@ -2,7 +2,9 @@
 /* Author: ToVinhKhang */
 /* ------------------- */
 
+/* ---- */
 /* INIT */
+/* ---- */
 html {box-sizing: border-box;}
 * {margin: 0;padding: 0;}
 *,*:before,*:after {box-sizing: border-box;}
@@ -14,9 +16,30 @@ img {display: block;max-width: 100%;}
 ul {list-style: none;}
 body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;background-color: white;color: #a4adc8;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;max-width: 1920px;margin: 0 auto;}
 .footer{width: 100%;text-align: center;padding: 30px;background-color: black;}
-
-/* CUSTOM */
 .wrapper {display: grid;grid-template-columns: 300px 1fr;grid-gap: 0;background-color: #fcfcfe;min-height: 100vh;}
+
+/* ------ */
+/* CUSTOM */
+/* ------ */
+
+/* DARK MODE */
+.dark-mode > .wrapper{background-color: black!important;}
+.dark-mode > .wrapper > div > ul > li > a{color: #A4ADC8!important;}
+.dark-mode > .wrapper > div > h3{color: #A4ADC8!important;}
+.dark-mode > .wrapper > .sidebar{background-color: black!important;}
+.dark-mode > .wrapper > .sidebar > div > h3 {color: #A4ADC8!important;}
+.dark-mode > .wrapper > .main > div > div > div > h2 {color: #A4ADC8!important;}
+.dark-mode > .wrapper > .main > div > div > .song-list {background-color: black!important;border-radius: 20px;}
+.dark-mode > .wrapper > .main > div > div > .song-list > div > div{background-color: #18191a!important;color: #A4ADC8!important;}
+.dark-mode > .wrapper > .main > div > div > .song-list > div > div > span{color: #A4ADC8!important;}
+.dark-mode > .wrapper > .main > div > div > .song-list > div > div > h4{color: white!important;}
+.dark-mode > .wrapper > .main > div > div > input {background-color: #18191a!important; color: white!important;}
+.dark-mode > .wrapper > .main > div > div > .player {background-color: #957DAD!important;}
+.dark-mode > .wrapper > .main > div > div > .player > .player-box {background-color: #18191a!important;}
+.dark-mode > .wrapper > .main > div > div > .player > .player-box > h3 {color: white!important;}
+.tool-icon-responsive{display: none;}
+
+/* MENU */
 .sidebar {padding: 30px;background-color: white;}
 .profile {text-align: center;margin-bottom: 70px;}
 .profile-avatar {width: 150px;height: 150px;border-radius: 100rem;object-fit: cover;margin: 0 auto 20px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
@@ -25,50 +48,27 @@ body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;backgroun
 .menu-link {display: flex;align-items: center;padding: 10px;color: #050938;font-size: 16px;}
 .menu-link:hover {color: #2b48d9;}
 .menu-icon {width: 20px;margin-right: 15px;}
+
+/* MAIN */
 .main {padding: 30px 35px 0;margin-bottom: 50px;}
 .header {display: flex;justify-content: space-between;align-items: center;margin-bottom: 40px;}
-.search {padding: 15px 30px;border: 1px solid #e9ebf2;border-radius: 100px;display: flex;align-items: center;width: 100%;max-width: 400px;}
+.search {padding: 15px 30px;border: 2px solid #e9ebf2;border-radius: 100px;display: flex;align-items: center;width: 100%;max-width: 400px;}
 .search-icon {flex: 1;font-size: 16px;}
 .search-input {border: 0;outline: none;width: 100%;padding: 0 15px;background-color:#FCFCFE;font-style: italic;letter-spacing:1px;}
 .tool {font-size: 18px;display: flex;align-items: center;}
 .tool-icon {margin-right: 25px;}
-.upgrade {
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  text-align: center;
-  background-image: linear-gradient(to right, #fb612c, #fc2872);
-  border-radius: 50px;
-  font-size: 12px;
-  text-transform: capitalize;
-}
+.upgrade {display: inline-block;padding: 10px 20px;color: white;text-align: center;background-image: linear-gradient(to right, #fb612c, #fc2872);border-radius: 50px;font-size: 12px;text-transform: capitalize;}
 .block-box {margin-bottom: 30px;}
-.heading {
-  font-size: 25px;
-  color: #050938;
-  margin-bottom: 10px;
-  font-weight: 600;
-  text-transform: capitalize;
-}
+.heading {font-size: 25px;color: #050938;margin-bottom: 10px;font-weight: 600;text-transform: capitalize;}
 .count {font-weight: 600;}
-.title {
-  margin-bottom: 10px;
-  color: #050938;
-  font-weight: 600;
-  text-transform: capitalize;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  line-height: 1.4;
-}
+.title {margin-bottom: 10px;color: #050938;font-weight: 600;text-transform: capitalize;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;word-break: break-word;line-height: 1.4;}
+
+/* SONG */
 .author {text-transform: capitalize;color: #a4adc8;}
 .content {display: grid;grid-template-columns: 2fr 1.2fr;grid-gap: 25px;}
 .song {padding: 10px 20px;background-color: white;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;display: flex;align-items: center;margin-bottom: 10px;cursor: pointer;}
 .song *:not(.song-love){pointer-events: none;}
-.song-list {padding: 10px;max-height: 420px;overflow-y: auto;-ms-overflow-style: none;scrollbar-width: none;}
+.song-list {padding: 10px;max-height: 490px;overflow-y: auto;-ms-overflow-style: none;scrollbar-width: none;}
 .song-list::-webkit-scrollbar {display: none;}
 .song-index {font-weight: bold;color: #050938;margin-right: 15px;}
 .song-image {width: 40px;height: 40px;border-radius: 4px;object-fit: cover;flex-shrink: 0;}
@@ -79,119 +79,36 @@ body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;backgroun
 .song-love {cursor: pointer;font-size: 16px;}
 .song-love input {display: none;}
 .song-love input:checked + .song-heart {color: #fc2872;}
-.player {
-  background-color: #9799BA;
-  padding: 20px;
-  border-radius: 12px 12px 0 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.player-box {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  border-radius: 20px;
-  max-width: 300px;
-  margin: 0 auto 30px;
-  background-color: white;
-}
-.player-media {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  border-radius: 100rem;
-  margin-bottom: 25px;
-}
-.player-media:before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  border-radius: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-.player-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: inherit;
-}
+
+/* PLAYER */
+.player {background-color: #9799BA;padding: 42px;border-radius: 12px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+.player-box {box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;padding: 25px;display: flex;align-items: center;justify-content: center;flex-direction: column;text-align: center;border-radius: 20px;max-width: 300px;margin: 0 auto 30px;background-color: white;}
+.player-media {position: relative;width: 150px;height: 150px;border-radius: 100rem;margin-bottom: 25px;}
+.player-media:before {content: "";width: 50px;height: 50px;background-color: white;border-radius: 100px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 10;}
+.player-image {width: 100%;height: 100%;object-fit: cover;border-radius: inherit;}
 .player-image.is-playing {animation: rotate 10s forwards infinite linear;}
 @keyframes rotate {to {transform: rotate(360deg);}}
-.player-title.title {
-  width: 100%;
-  align-self: stretch;
-}
-.progress {
-  margin-bottom: 20px;
-  margin-top: 25px;
-}
-.player-number {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-.player-tool {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.player-play {
-  color: #2b48d9;
-  width: 45px;
-  height: 45px;
-  border-radius: 100rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  background-color: white;
-  box-shadow: 0 0 0 10px rgba(242, 243, 244, 0.5);
-  font-size: 16px;
-  margin: 0 30px;
-}
-.player-next,.player-prev {
-  cursor: pointer;
-  font-size: 16px;
-  color: #F1F1F1;
-}
-.progress {width: 100%;position: relative;}
-.bar {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 3px;
-  background: #d3d3d3;
-  outline: none;
-  -webkit-transition: 0.2s;
-  transition: opacity 0.2s;
-}
-.bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 10px;
-  height: 10px;
-  border-radius: 100rem;
-  background-color: #2b48d9;
-  box-shadow: 0 0 0 5px white, 0 0 0 6px #ccc;
-}
-.bar::-moz-range-thumb {
-  cursor: pointer;
-  width: 10px;
-  height: 10px;
-  border-radius: 100rem;
-  background-color: #2b48d9;
-  box-shadow: 0 0 0 5px white, 0 0 0 6px #ccc;
-}
+.player-title.title {width: 100%;align-self: stretch;}
+.player-number {display: flex;justify-content: space-between;align-items: center;width: 100%;}
+.player-tool {display: flex;justify-content: center;align-items: center;}
+.player-play {color: #2b48d9;width: 45px;height: 45px;border-radius: 100rem;display: flex;justify-content: center;align-items: center;cursor: pointer;background-color: white;box-shadow: 0 0 0 10px rgba(242, 243, 244, 0.5);font-size: 16px;margin: 0 30px;}
+.player-next,.player-prev {cursor: pointer;font-size: 16px;color: #F1F1F1;}
 
+/* PROGESS BAR */
+.progress {width: 100%;position: relative;margin-bottom: 20px;margin-top: 25px;}
+.bar {-webkit-appearance: none;width: 100%;height: 3px;background: #d3d3d3;outline: none;-webkit-transition: 0.2s;transition: opacity 0.2s;}
+.bar::-webkit-slider-thumb {-webkit-appearance: none;appearance: none;width: 10px;height: 10px;border-radius: 100rem;background-color: #2b48d9;box-shadow: 0 0 0 5px white, 0 0 0 6px #ccc;}
+.bar::-moz-range-thumb {cursor: pointer;width: 10px;height: 10px;border-radius: 100rem;background-color: #2b48d9;box-shadow: 0 0 0 5px white, 0 0 0 6px #ccc;}
+
+/* LOADER */
+.loader {margin-top: 25%;border: 10px solid #f3f3f3;border-top: 10px solid #65506D;border-radius: 50%;width: 120px; height: 120px;-webkit-animation: spin 2s linear infinite;animation: spin 2s linear infinite;}
+@-webkit-keyframes spin {0% { -webkit-transform: rotate(0deg); }100% { -webkit-transform: rotate(360deg); }}
+@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
+
+
+/* ---------- */
 /* RESPONSIVE */
+/* ---------- */
 @media screen and (max-width: 1279px) {
 	.profile{margin: 0px;padding-top: 30px;}
 	.profile-avatar{width: 120px; height: 120px;}
@@ -202,7 +119,7 @@ body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;backgroun
 	.content{grid-template-columns: 100%;grid-row-gap: 50px;}
 	.header{display: grid;grid-template-columns: 100%;grid-gap: 30px 0;}
 	.song-list{max-height: 350px;}
-	.main{padding: 20px 20px 0;margin-bottom: 50px;}
+	.main{padding: 20px 20px 0;margin-bottom: 0px;}
 	.song-title,.song-album{display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;width: auto!important; overflow: hidden;text-overflow: ellipsis;word-break: break-word;font-size:12px;}
 	.song-title{max-width: 150px;}
 	.song-album{float: right;max-width: 120px;}
@@ -211,8 +128,10 @@ body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;backgroun
 	.author{font-size: 12px;}
 	.search{max-width: 100%;height: 35px;}
 	.player{border-radius: 12px;}
+	#now-playing{padding-bottom: 40px;}
 	#countSong{display: none;}
-	.tool{display: none;}
+	.tool-icon,.upgrade{display: none;}
+	.tool-icon-responsive{display: block; margin-right: 0px; position: absolute; top: 26px; right: 26px;}
 	.song{padding: 10px;}
 }
 @media screen and (max-width: 415px) {
@@ -220,7 +139,6 @@ body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;backgroun
 	.song-album{max-width: 82px;font-size:11px;}
 }
 
-/* LOADER */
-.loader {margin-top: 25%;border: 10px solid #f3f3f3;border-top: 10px solid #65506D;border-radius: 50%;width: 120px; height: 120px;-webkit-animation: spin 2s linear infinite;animation: spin 2s linear infinite;}
-@-webkit-keyframes spin {0% { -webkit-transform: rotate(0deg); }100% { -webkit-transform: rotate(360deg); }}
-@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
+/* ---------- */
+/* 	   END    */
+/* ---------- */
