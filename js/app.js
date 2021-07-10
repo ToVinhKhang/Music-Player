@@ -166,7 +166,6 @@ song.addEventListener("ended", function () {nextSong();});
 
 function HandleClickEachSongAfterFetch(){
 	songList = document.querySelectorAll(".song");
-	console.log(songs[0])
 	songList.forEach((el) => el.addEventListener("click", handleClickEachSong));
 }
 setInterval(HandleClickEachSongAfterFetch,2000)
