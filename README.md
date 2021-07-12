@@ -5,8 +5,6 @@
 <br>
 
 + Displaying UserInfo/Changing Avatar.
-<br>
-
 #### Link API:
 `
 https://tinyurl.com/7frz2rdw
