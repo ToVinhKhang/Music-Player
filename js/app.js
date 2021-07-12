@@ -7,7 +7,7 @@
 // Fetch API 
 // ----------
 
-let List; const API = "https://api.apify.com/v2/key-value-stores/EJ3Ppyr2t73Ifit64/records/LATEST?fbclid=IwAR3lI6UNrh62He0eIZeVzJLiQ7fnUkqX7HAKUmrYwxiToUEuHxIXO8PDOwI";
+let List; const API = "https://tinyurl.com/7frz2rdw";
 window.addEventListener('load',() => {
 	List = document.getElementById("song-list");
 	loadByFetch();

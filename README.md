@@ -1,15 +1,15 @@
-# Music Player
-This project demo fetch TOP100 Vietnam Music.
+# Music Player - TOP100 Vietnam Music.
+#### Some features have been omitted to facilitate quick demo including:
+
++ Signup/Signin Account with GoogleAuth/Database.
 <br>
 
-Some features have been omitted to facilitate quick demo including:
++ Displaying UserInfo/Changing Avatar.
 <br>
-+Signup / Signin Account with GoogleAuth / Database.
 
-<br>
-+Displaying UserInfo / Changing Avatar.
-
-
-
+#### Link API:
+`
+https://tinyurl.com/7frz2rdw
+`
 
 
