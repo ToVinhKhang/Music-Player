@@ -3,7 +3,6 @@
 
 + Signup/Signin Account with GoogleAuth/Database.
 <br>
-
 + Displaying UserInfo/Changing Avatar.
 #### Link API:
 `
