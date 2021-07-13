@@ -1,6 +1,7 @@
-/* ------------------- */
-/* Author: ToVinhKhang */
-/* ------------------- */
+/* -------------------------------- */
+/* Author: ToVinhKhang 				*/
+/* https://tovinhkhang.netlify.app/ */
+/* -------------------------------- */
 
 /* ---- */
 /* INIT */
@@ -68,7 +69,7 @@ body{font-family: "Poppins", sans-serif;font-size: 14px;line-height: 1;backgroun
 .content {display: grid;grid-template-columns: 2fr 1.2fr;grid-gap: 25px;}
 .song {padding: 10px 20px;background-color: white;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;display: flex;align-items: center;margin-bottom: 10px;cursor: pointer;}
 .song *:not(.song-love){pointer-events: none;}
-.song-list {padding: 10px;max-height: 490px;overflow-y: auto;-ms-overflow-style: none;scrollbar-width: none;}
+.song-list {padding: 10px;max-height: 490px;overflow: scroll;}
 .song-list::-webkit-scrollbar {display: none;}
 .song-index {font-weight: bold;color: #050938;margin-right: 15px;}
 .song-image {width: 40px;height: 40px;border-radius: 4px;object-fit: cover;flex-shrink: 0;}
