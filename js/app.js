@@ -25,7 +25,7 @@ function displayData(jsonData){
 	Data.forEach(u => {
 		var div = document.createElement("div");
 		div.innerHTML = `
-			<div class="song row" data-index="`+count+`">
+			<div class="song" data-index="`+count+`">
 			  <span class="song-index">`+Zero(count)+`</span>
 			  <img
 				src="`+u.avatar+`"
